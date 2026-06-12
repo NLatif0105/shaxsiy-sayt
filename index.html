@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nurmuhammad Abdulhamid o'g'li — Matematika o'qituvchisi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND DECOR -->
+  <div id="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div id="confetti"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-icon"><i class="fas fa-square-root-variable"></i></span>
+      <span class="nav-logo-text">Nurmuhammad</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav_about">Haqimda</a></li>
+      <li><a href="#certificates" data-i18n="nav_certs">Sertifikatlar</a></li>
+      <li><a href="#experience" data-i18n="nav_experience">Tajriba</a></li>
+      <li><a href="#library" data-i18n="nav_library">Kutubxona</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Loyihalar</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Aloqa</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="uz">UZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner fade-in">
+      <div class="hero-text">
+        <span class="hero-eyebrow" data-i18n="hero_eyebrow">Oliy toifali o'qituvchi</span>
+        <h1 class="hero-name" data-i18n-html="hero_heading">Matematikani <span class="accent-blue">aniq</span> va <span class="accent-pink">qiziqarli</span> o'rgataman</h1>
+        <p class="hero-desc" data-i18n="hero_desc">Murakkab mavzularni sodda tilda tushuntiraman — o'quvchi yodlamaydi, tushunadi. 5 yillik tajriba, GMAT va SAT sertifikatlari.</p>
+        <div class="hero-socials">
+          <a href="https://t.me/al_quba" target="_blank" class="btn btn-primary">
+            <i class="fab fa-telegram"></i> <span data-i18n="hero_btn_tg">Telegram orqali yozish</span>
+          </a>
+          <a href="tel:+998944393977" class="btn btn-ghost">
+            <i class="fas fa-phone"></i> +998 94 439 39 77
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-bg"></div>
+        <span class="hero-badge hero-badge-yellow"><i class="fas fa-award"></i> SAT 730</span>
+        <span class="hero-badge hero-badge-pink"><i class="fas fa-brain"></i> GMAT 47</span>
+        <img src="photo_2026-06-11_17-25-03.jpg" alt="Nurmuhammad" class="hero-photo" draggable="false" oncontextmenu="return false" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="container highlights-grid fade-in">
+      <div class="highlight-card">
+        <div class="highlight-icon hi-blue"><i class="fas fa-lightbulb"></i></div>
+        <div>
+          <h3 data-i18n="hl1_title">Tushunarli darslar</h3>
+          <p data-i18n="hl1_desc">Sodda va qiziqarli tushuntirish</p>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon hi-yellow"><i class="fas fa-medal"></i></div>
+        <div>
+          <h3 data-i18n="hl2_title">Xalqaro daraja</h3>
+          <p data-i18n="hl2_desc">GMAT va SAT sertifikatlari</p>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon hi-pink"><i class="fas fa-user-graduate"></i></div>
+        <div>
+          <h3 data-i18n="hl3_title">5 yillik tajriba</h3>
+          <p data-i18n="hl3_desc">Yuzlab o'quvchilar bilan ishlash</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container fade-in">
+      <h2 class="section-title" data-i18n-html="about_title">Men <span class="accent-blue">haqimda</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n-html="about_p1">
+            Men <strong>Nurmuhammad Abdulhamid o'g'li</strong> — oliy toifali matematika fani o'qituvchisiman.
+            <strong>5 yillik</strong> faol pedagogik faoliyat davomida o'quvchilarning matematikaga bo'lgan
+            qiziqishini oshirishga, murakkab mavzularni sodda va tushunarli tarzda tushuntirishga ixtisoslashganman.
+          </p>
+          <p data-i18n-html="about_p2">
+            Xalqaro <strong>GMAT</strong> va <strong>SAT</strong> imtihonlari sertifikatlariga egaman — bu
+            mening matematika sohasidagi chuqur bilimim va xalqaro standartlarga mosligimni tasdiqlaydi.
+          </p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label" data-i18n="stat_exp">Yil tajriba</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">730</span>
+            <span class="stat-label" data-i18n="stat_gmat">SAT Math</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">47</span>
+            <span class="stat-label" data-i18n="stat_sat">GMAT Math</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label" data-i18n="stat_top">Mehnat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="certificates section" id="certificates">
+    <div class="container fade-in">
+      <h2 class="section-title" data-i18n-html="cert_title">Mening <span class="accent-blue">Sertifikatlarim</span></h2>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon cert-icon--sat"><i class="fas fa-calculator"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-name" data-i18n="cert_sat_name">SAT Math</h3>
+            <p class="cert-org" data-i18n="cert_sat_org">College Board (Xalqaro)</p>
+            <div class="cert-score-row">
+              <span class="cert-score">730</span>
+              <span class="cert-max">/ 800</span>
+            </div>
+            <div class="cert-bar-wrap">
+              <div class="cert-bar" style="--pct: 91.25%"></div>
+            </div>
+            <span class="cert-pct">91.25%</span>
+          </div>
+          <button onclick="openCert('LatifovNurmuhammad%20SAT%20MATH.pdf')" class="cert-btn" data-i18n="cert_view">Ko'rish</button>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon cert-icon--gmat"><i class="fas fa-brain"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-name" data-i18n="cert_gmat_name">GMAT Math</h3>
+            <p class="cert-org" data-i18n="cert_gmat_org">GMAC (Xalqaro)</p>
+            <div class="cert-score-row">
+              <span class="cert-score">47</span>
+              <span class="cert-max">/ 51</span>
+            </div>
+            <div class="cert-bar-wrap">
+              <div class="cert-bar" style="--pct: 92.16%"></div>
+            </div>
+            <span class="cert-pct">92.16%</span>
+          </div>
+          <button onclick="openCert('GMAT%20report.pdf')" class="cert-btn" data-i18n="cert_view">Ko'rish</button>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon cert-icon--top"><i class="fas fa-medal"></i></div>
+          <div class="cert-body">
+            <h3 class="cert-name" data-i18n="cert_top_name">Oliy Toifa</h3>
+            <p class="cert-org" data-i18n="cert_top_org">O'zbekiston Xalq Ta'limi</p>
+            <div class="cert-score-row">
+              <span class="cert-score">86</span>
+              <span class="cert-max">/ 100</span>
+            </div>
+            <div class="cert-bar-wrap">
+              <div class="cert-bar" style="--pct: 86%"></div>
+            </div>
+            <span class="cert-pct">86%</span>
+          </div>
+          <button onclick="openCert('oliy%20toifa%20sert.pdf')" class="cert-btn" data-i18n="cert_view">Ko'rish</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container fade-in">
+      <h2 class="section-title" data-i18n-html="exp_title">Ish <span class="accent-blue">Tajribasi</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 – 2022</span>
+            </div>
+            <h3 class="timeline-school" data-i18n="exp1_name">16-DIMI</h3>
+            <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i><span data-i18n="exp1_loc">Andijon vil., Ulug'nor tumani</span></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 – 2025</span>
+            </div>
+            <h3 class="timeline-school" data-i18n="exp2_name">Ixtisoslashtirilgan maktab (PIIMA)</h3>
+            <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i><span data-i18n="exp2_loc">Andijon vil., Ulug'nor tumani</span></p>
+          </div>
+        </div>
+
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-top">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025 – <span data-i18n="exp_present">Hozir</span></span>
+              <span class="active-badge" data-i18n="exp_now">Faol</span>
+            </div>
+            <h3 class="timeline-school" data-i18n="exp3_name">Yuksalish Maktabi</h3>
+            <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i><span data-i18n="exp3_loc">Namangan</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIBRARY -->
+  <section class="library section" id="library">
+    <div class="container fade-in">
+      <h2 class="section-title" data-i18n-html="lib_title">Elektron <span class="accent-blue">Kutubxona</span></h2>
+      <p class="section-subtitle" data-i18n="lib_subtitle">Matematika bo'yicha foydali kitoblar va qo'llanmalar to'plami. Bepul yuklab oling yoki onlayn o'qing.</p>
+
+      <div class="book-grid" id="book-grid">
+
+        <!--
+          YANGI KITOB QO'SHISH:
+          1) PDF faylni "kitoblar" papkasiga joylang.
+          2) Pastdagi bitta <div class="book-card">...</div> blokini nusxalang.
+          3) onclick va href dagi fayl nomini yangi kitobga moslang
+             (onclick ichida bo'sh joy o'rniga %20 yozing, href da oddiy bo'sh joy).
+          4) book-cover rangini tanlang: --blue, --yellow, --pink, --green.
+        -->
+
+        <div class="book-card">
+          <div class="book-cover book-cover--blue"><i class="fas fa-square-root-variable"></i></div>
+          <div class="book-body">
+            <span class="book-tag" data-i18n="lib_tag_algebra">Algebra</span>
+            <h3 class="book-title">Algebra — 10-sinf (1-qism)</h3>
+            <p class="book-author">10-sinf • Darslik • PDF</p>
+          </div>
+          <div class="book-actions">
+            <button class="book-btn book-btn-view" onclick="openCert('kitoblar/10-sinf%20Algebra%201-qism.pdf')">
+              <i class="fas fa-eye"></i> <span data-i18n="lib_read">O'qish</span>
+            </button>
+            <a class="book-btn book-btn-dl" href="kitoblar/10-sinf Algebra 1-qism.pdf" download><i class="fas fa-download"></i></a>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover book-cover--green"><i class="fas fa-square-root-variable"></i></div>
+          <div class="book-body">
+            <span class="book-tag" data-i18n="lib_tag_algebra">Algebra</span>
+            <h3 class="book-title">Algebra — 10-sinf (2-qism)</h3>
+            <p class="book-author">10-sinf • Darslik • PDF</p>
+          </div>
+          <div class="book-actions">
+            <button class="book-btn book-btn-view" onclick="openCert('kitoblar/10-sinf%20Algebra%202-qism.pdf')">
+              <i class="fas fa-eye"></i> <span data-i18n="lib_read">O'qish</span>
+            </button>
+            <a class="book-btn book-btn-dl" href="kitoblar/10-sinf Algebra 2-qism.pdf" download><i class="fas fa-download"></i></a>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover book-cover--blue"><i class="fas fa-superscript"></i></div>
+          <div class="book-body">
+            <span class="book-tag" data-i18n="lib_tag_algebra">Algebra</span>
+            <h3 class="book-title">Algebra — 9-sinf</h3>
+            <p class="book-author">9-sinf • Darslik (2019) • PDF</p>
+          </div>
+          <div class="book-actions">
+            <button class="book-btn book-btn-view" onclick="openCert('kitoblar/algebra%209-sinf%20yangi%202019.pdf')">
+              <i class="fas fa-eye"></i> <span data-i18n="lib_read">O'qish</span>
+            </button>
+            <a class="book-btn book-btn-dl" href="kitoblar/algebra 9-sinf yangi 2019.pdf" download><i class="fas fa-download"></i></a>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover book-cover--yellow"><i class="fas fa-shapes"></i></div>
+          <div class="book-body">
+            <span class="book-tag" data-i18n="lib_tag_geometry">Geometriya</span>
+            <h3 class="book-title">Geometriya — 7-sinf</h3>
+            <p class="book-author">7-sinf • Darslik • PDF</p>
+          </div>
+          <div class="book-actions">
+            <button class="book-btn book-btn-view" onclick="openCert('kitoblar/geometriya_7_uzb.pdf')">
+              <i class="fas fa-eye"></i> <span data-i18n="lib_read">O'qish</span>
+            </button>
+            <a class="book-btn book-btn-dl" href="kitoblar/geometriya_7_uzb.pdf" download><i class="fas fa-download"></i></a>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover book-cover--pink"><i class="fas fa-draw-polygon"></i></div>
+          <div class="book-body">
+            <span class="book-tag" data-i18n="lib_tag_geometry">Geometriya</span>
+            <h3 class="book-title">Geometriya — 9-sinf</h3>
+            <p class="book-author">9-sinf • Darslik • PDF</p>
+          </div>
+          <div class="book-actions">
+            <button class="book-btn book-btn-view" onclick="openCert('kitoblar/geometriya_9_uzb.pdf')">
+              <i class="fas fa-eye"></i> <span data-i18n="lib_read">O'qish</span>
+            </button>
+            <a class="book-btn book-btn-dl" href="kitoblar/geometriya_9_uzb.pdf" download><i class="fas fa-download"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container fade-in">
+      <h2 class="section-title" data-i18n-html="projects_title">Mening <span class="accent-blue">Loyihalarim</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-square-root-variable"></i></div>
+            <span class="project-badge" data-i18n="project_badge">Jarayonda</span>
+          </div>
+          <h3 class="project-name">Math Xolis Sinov</h3>
+          <p class="project-desc" data-i18n="project_desc">
+            Matematika bo'yicha mustaqil va xolis baholash platformasi. O'quvchilar bilimlarini
+            real vaqtda sinab ko'rish imkoniyati.
+          </p>
+          <a href="https://math-xolis-sinov.lovable.app" target="_blank" class="project-link" data-i18n-html="project_link">
+            Loyihani ko'rish <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container fade-in">
+      <h2 class="section-title" data-i18n-html="contact_title">Bog'lanish <span class="accent-blue">Usullari</span></h2>
+      <p class="section-subtitle" data-i18n="contact_subtitle">Savol yoki hamkorlik takliflaringiz bo'lsa, men bilan bog'laning.</p>
+      <div class="contact-cards">
+        <a href="tel:+998944393977" class="contact-card">
+          <i class="fas fa-phone"></i>
+          <span class="contact-label" data-i18n="contact_phone_label">Telefon</span>
+          <span class="contact-value">+998 94 439 39 77</span>
+        </a>
+        <a href="https://t.me/al_quba" target="_blank" class="contact-card">
+          <i class="fab fa-telegram"></i>
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@al_quba</span>
+        </a>
+        <a href="mailto:muhammadnur.latifov@mail.ru" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">muhammadnur.latifov<br/>@mail.ru</span>
+        </a>
+        <a href="mailto:abuabdulloh226@gmail.com" class="contact-card">
+          <i class="fab fa-google"></i>
+          <span class="contact-label">Gmail</span>
+          <span class="contact-value">abuabdulloh226<br/>@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p data-i18n-html="footer_copy">&copy; 2025 Nurmuhammad Abdulhamid o'g'li. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <!-- SCREENSHOT WARNING TOAST -->
+  <div id="ss-warning" class="ss-warning">
+    <i class="fas fa-shield-alt"></i>
+    <span data-i18n="ss_warn">Skrinshot taqiqlangan</span>
+  </div>
+
+  <!-- PDF VIEWER MODAL -->
+  <div id="cert-modal" class="cert-modal-overlay" style="display:none" onclick="closeCertModal(event)">
+    <div class="cert-modal-box">
+      <button class="cert-modal-close" onclick="closeCertModal(true)">
+        <i class="fas fa-times"></i>
+      </button>
+      <iframe id="cert-modal-frame" src="" frameborder="0"
+        oncontextmenu="return false"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
